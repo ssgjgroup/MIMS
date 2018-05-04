@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>站点问题汇报填写</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/enterprise.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_575705_lfzo7jv66zjjor.css"/>
+	</head>
+	<body>
+		<div class="mui-content datum gray site-question-write">
+		    <!--header-->
+			<div class="header">
+				<span class="mui-icon mui-icon-arrowleft" onclick="history.go(-1)"></span>
+				<div>胸外科病区护士工作站</div>
+				<span class="mui-icon mui-icon-more"></span>
+			</div>
+			<div class="hole"></div>
+			<div class="datum-report padding-btm-20 padding-top-15">
+				<div class="datum-report-item">
+					<span>处理人</span>
+					<a href="#">二蛋<i class="iconfont icon-fanhui"></i></a>
+				</div>
+			</div>
+			<div class="datum-report padding-btm-20">
+				<div class="datum-report-item">
+					<span>汇报人</span>
+					<div class="check-distribuion-item">
+						<span>李思</span>
+						<div>
+							汇报时间
+							<time>2017/07/06 20:08</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="datum-report padding-btm-20">
+				<div class="datum-report-item">
+					<span>系统名称</span>
+					<div class="select">
+						<input type="hidden"/>
+						<a href="#"><span>住院护士站</span><i class="arrow"></i></a>
+		                <ul>
+		                	<li data-val="-1">护理文书</li>
+		                	<li data-val="0">报告类</li>
+		                	<li data-val="1">医疗类</li>
+		                </ul>
+					</div>
+				</div>
+			</div>
+			<div class="datum-report padding-btm-20">
+				<div class="datum-report-item">
+					<span>菜单名称</span>
+					<div class="select">
+						<input type="hidden"/>
+						<a href="#"><span>护理文书</span><i class="arrow"></i></a>
+		                <ul>
+		                	<li data-val="-1">护理文书</li>
+		                	<li data-val="0">报告类</li>
+		                	<li data-val="1">医疗类</li>
+		                </ul>
+					</div>
+				</div>
+			</div>
+			<div class="datum-report padding-btm-20">
+				<div class="datum-report-item">
+					<span>问题分类</span>
+					<div class="select">
+						<input type="hidden"/>
+						<a href="#"><span>程序类问题</span><i class="arrow"></i></a>
+		                <ul>
+		                	<li data-val="-1">程序类</li>
+		                	<li data-val="0">报告类</li>
+		                	<li data-val="1">医疗类</li>
+		                </ul>
+					</div>
+				</div>
+			</div>
+			<div class="datum-report">
+				<div class="datum-report-item">
+					<span class="align-self">问题描述</span>
+					<textarea class="margin-left"></textarea>
+				</div>
+			</div>
+			<div class="datum-report padding-btm-20">
+				<div class="datum-report-item">
+					<span class="align-self">拍照上传</span>
+					<div class="datum-upload site-width">
+						<div>
+							<i class="iconfont icon-plus"></i>
+							<input type="file" name="" id="" value="" />
+						</div>
+						<div>
+							<img src="../images/1.jpg"/>
+							<span class="iconfont icon-close"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-button">
+				<input type="button" name="" id="" value="保存" />
+				<input type="button" name="" id="" value="取消" />
+			</div>
+		</div>
+		<div class="large-img">
+			<img src="../images/video.png"/>
+			<span class="iconfont icon-close"></span>
+		</div>
+		<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ims.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				IMS.dropDown();
+				enterprise.init();
+			})
+		</script>
+	</body>
+</html>

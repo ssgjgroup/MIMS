@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>胸外科病区护士工作站</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/enterprise.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_575705_o710wavlb78n0zfr.css" />
+	</head>
+
+	<body>
+		<div class="mui-content check-distribuion-chart">
+			<!--header-->
+			<div class="header">
+				<span class="mui-icon mui-icon-arrowleft" onclick="history.go(-1)"></span>
+				<div>胸外科病区护士工作站</div>
+				<span class="mui-icon mui-icon-more"></span>
+			</div>
+			<div class="hole"></div>
+		    <div id='chart'></div>
+		    <div class="check-distribuion-list">
+		    	<div class="mui-input-row mui-radio">
+					<label>
+						<strong>张文 </strong><span>实施工程师  处理问题数</span><i>18</i>
+					</label>
+					<input name="radio1" type="radio">
+				</div> 
+				<div class="mui-input-row mui-radio">
+					<label>
+						<strong>张文 </strong><span>实施工程师  处理问题数</span><i>18</i>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-input-row mui-radio">
+					<label>
+						<strong>张文 </strong><span>实施工程师  处理问题数</span><i>18</i>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-input-row mui-radio">
+					<label>
+						<strong>张文 </strong><span>实施工程师  处理问题数</span><i>18</i>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-input-row mui-radio">
+					<label>
+						<strong>张文 </strong><span>实施工程师  处理问题数</span><i>18</i>
+					</label>
+					<input name="radio1" type="radio">
+				</div> 
+		    </div>
+		    <div class="fix-hole"></div>
+		    <div class="check-distribuion-btn">
+		    	<input type="button" value="保存" />
+		    	<input type="button" value="取消" />
+		    </div>
+		</div>
+		<script src="../js/echarts.simple.min.js"></script>
+		<script src="../js/ims.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var myChart = echarts.init(document.getElementById('chart'));
+
+			// 指定图表的配置项和数据
+			var option = {
+				tooltip: {
+					show:true,
+					trigger: 'axis',
+					axisPointer: {
+						type: 'shadow'
+					}
+				},
+				grid: {
+					top:'10',
+					left: '0%',
+					right: '0%',
+					bottom: '0%',
+					containLabel: true
+				},
+				xAxis: {
+					type: 'value',
+					axisLine:{
+						lineStyle:{
+							color:'#666'
+						}
+					},
+					splitLine:{
+						lineStyle:{
+							width:'0.8',
+							color:'#E2E2E2',
+							type:'dashed'
+						}
+					}
+				},
+				yAxis: {
+					show:true,
+					axisLabel:{
+						interval: 0,
+						fontSize:8
+					},
+					axisLine:{
+						lineStyle:{
+							color:'#666'
+						}
+					},
+					type: 'category',
+					data: ['张三1', '李斯2', '李斯2', '毛豆3', '保罗4','汉斯','张三2', '李斯2', '毛豆豆', '保罗', 'Jake', '汉斯']
+				},
+				series: [{
+					type: 'bar',
+					data: [18,6, 22, 24, 6, 22, 27,18, 22, 24, 6, 22],
+					label:{
+						normal:{
+							show:true,
+							padding:[2,5],
+							position:'insideRight',
+							color:'#fff',
+							fontSize:'12',
+							offset:[5,0],
+							backgroundColor:'#66C9FF'
+						}
+					},
+					itemStyle:{
+						color:'#d6f1ff'
+					}
+					
+				}]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+		</script>
+	</body>
+
+</html>
